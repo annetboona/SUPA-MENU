@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #f7941d;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --error-color: #ff4d4d;
+  --border-color: #e5e5e5;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.auth-box {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+  font-size: 32px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo h1 span {
+  color: var(--primary-color);
+}
+
+.auth-content h2 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.auth-content h3 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 8px;
+}
+
+.auth-content p {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.login-button,
+.signup-button {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #e68019;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.auth-footer p {
+  color: #666;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-message {
+  background-color: #fff2f2;
+  color: var(--error-color);
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* Restaurant Registration Styles */
+.restaurant-registration {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.steps-indicator {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  position: relative;
+}
+
+.step.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.step:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--border-color);
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.back-button,
+.next-button,
+.submit-button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.next-button,
+.submit-button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #fff5e6;
+}
+
+.next-button:hover,
+.submit-button:hover {
+  background-color: #e68019;
+}
